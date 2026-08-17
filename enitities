@@ -1,0 +1,17 @@
+PoliticalParty(partyId, Name, partySymbol, partyLeaderId, foundedYear, partyFounderId,
+headquarters)
+Result(resultId, candidateId, constituencyId, totalVotes, constituencyVotes, winnerSta-
+tus)
+CampaignEvent(eventId, candidateId, eventName, location, constituencyId, eventDate,
+peopleAttended)
+Candidate(candidateId, Name, dateOfBirth, age, gender, partyId, constituencyId, pho-
+neNumber)
+Constituency(constituencyId, constituencyName, areaSqKm, totalVoters, numberOf-
+PollingBooths, districtName)
+Voter(voterId, Name, dateOfBirth, age, gender, constituencyId, phoneNumbers)
+Vote(voteId, voterId, candidateId, boothId, electionId, timestamp)
+PollingBooth(boothId, location, constituencyId, capacity, boothNumber)
+ElectionOfficer(officerId, name, designation, reportsTo, voterId, dependentID, assigned-
+Constituency)
+FamilyMember(ID, name, age, relation, officerId)
+
